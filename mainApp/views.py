@@ -1,6 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('mainApp/html/main.html')
+    return render(request, 'mainsDiv/html/main.html')
